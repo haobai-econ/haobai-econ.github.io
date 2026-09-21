@@ -59,6 +59,7 @@ footer {
 .profile-left {
     width: 380px;
     flex-shrink: 0;
+    align-self: center;
 }
 
 .profile-photo {
