@@ -1,14 +1,24 @@
 
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
 body {
     font-family: "Segoe UI", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background: #fafafa;
+    color: #333;
 }
 
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
 nav {
-    background: #4B0082; /* Manchester purple */
+    background: #4B0082;
     padding: 10px 20px;
 }
 
@@ -16,6 +26,9 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+
+    margin: 0;
+    padding: 10px 20px;
 }
 
 nav ul li a {
@@ -28,11 +41,10 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
     text-align: center;
@@ -42,12 +54,15 @@ footer {
 }
 
 
-/* ===== HOME PAGE TWO-COLUMN LAYOUT ===== */
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
 
 .profile-container {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 30px;
+    padding: 0 50px;
 
     display: flex;
     flex-direction: row;
@@ -55,7 +70,9 @@ footer {
     gap: 60px;
 }
 
-/* LEFT: PHOTO */
+
+/* Left: Photo */
+
 .profile-left {
     width: 380px;
     flex-shrink: 0;
@@ -69,7 +86,9 @@ footer {
     margin: 0;
 }
 
-/* RIGHT: TEXT */
+
+/* Right: Text */
+
 .profile-right {
     flex: 1;
     min-width: 0;
@@ -99,13 +118,221 @@ footer {
 }
 
 
-/* MOBILE VERSION */
+
+/* =========================================================
+   RESEARCH PAGE
+   ========================================================= */
+
+.research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 50px 80px 50px;
+}
+
+
+/* Research sections */
+
+.research-section {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 80px 0;
+    padding: 0;
+}
+
+
+/* Research section headings */
+
+.research-section h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+
+    color: #444;
+
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+
+/* Individual paper */
+
+.research-paper {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+
+/* Paper title */
+
+.research-paper h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+
+/* Linked paper titles */
+
+.research-paper h2 a {
+    color: #006d83;
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.research-paper h2 a:hover {
+    color: #004c5c;
+}
+
+
+/* Non-linked paper titles */
+
+.paper-title {
+    color: #222;
+}
+
+
+/* Paper descriptions */
+
+.paper-description {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #333;
+
+    text-align: justify;
+
+    margin: 0;
+}
+
+
+
+/* =========================================================
+   TEACHING PAGE
+   ========================================================= */
+
+.teaching-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 50px 80px 50px;
+}
+
+
+/* Teaching page title */
+
+.teaching-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+
+    color: #444;
+
+    margin: 0 0 55px 0;
+}
+
+
+/* Each teaching position */
+
+.teaching-entry {
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 60px 0;
+    padding: 0;
+}
+
+
+/* Position and university row */
+
+.teaching-heading {
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+    column-gap: 45px;
+
+    align-items: baseline;
+
+    margin-bottom: 22px;
+}
+
+
+/* Position */
+
+.teaching-position {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+
+    color: #222;
+}
+
+
+/* University */
+
+.teaching-institution {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+
+    color: #222;
+}
+
+
+/* Course list */
+
+.teaching-courses {
+    margin: 0;
+    padding: 0;
+}
+
+.teaching-courses p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.5;
+
+    color: #333;
+
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 800px) {
 
+    /* Navigation */
+
+    nav ul {
+        gap: 15px;
+        padding: 8px 5px;
+    }
+
+
+    /* Home */
+
     .profile-container {
         flex-direction: column;
+
         margin: 30px auto;
+        padding: 0 25px;
+
         gap: 30px;
     }
 
@@ -122,96 +349,25 @@ footer {
     .profile-right {
         width: 100%;
     }
-}
 
 
-/* ========================================
-   Research Page
-   ======================================== */
-
-.research-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 50px 80px 50px;
-}
-
-
-/* Research section */
-
-.research-section {
-    margin-bottom: 80px;
-}
-
-.research-section h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: normal;
-    color: #444;
-    margin-top: 0;
-    margin-bottom: 45px;
-}
-
-
-/* Individual paper */
-
-.research-paper {
-    margin-bottom: 50px;
-}
-
-.research-paper h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 14px;
-}
-
-
-/* Paper title links */
-
-.research-paper h2 a {
-    color: #006d83;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-}
-
-.research-paper h2 a:hover {
-    color: #004c5c;
-}
-
-
-/* Titles without links */
-
-.paper-title {
-    color: #222;
-}
-
-
-/* Paper description / abstract */
-
-.paper-description {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
-    margin: 0;
-}
-
-
-/* Responsive design */
-
-@media (max-width: 768px) {
+    /* Research */
 
     .research-container {
         padding: 40px 25px 60px 25px;
     }
 
+    .research-section {
+        margin-bottom: 60px;
+    }
+
     .research-section h1 {
         font-size: 28px;
         margin-bottom: 35px;
+    }
+
+    .research-paper {
+        margin-bottom: 40px;
     }
 
     .research-paper h2 {
@@ -223,150 +379,37 @@ footer {
         text-align: left;
     }
 
-    .research-paper {
+
+    /* Teaching */
+
+    .teaching-container {
+        padding: 40px 25px 60px 25px;
+    }
+
+    .teaching-title {
+        font-size: 28px;
         margin-bottom: 40px;
     }
 
-}
-
-/* =========================================================
-   TEACHING PAGE
-   ========================================================= */
-
-
-/* Whole page content */
-
-.hao-teaching-page {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto !important;
-    padding: 60px 0 100px 0 !important;
-}
-
-
-/* Teaching title */
-
-.hao-teaching-title {
-    font-family: Georgia, "Times New Roman", serif !important;
-    font-size: 34px !important;
-    font-weight: normal !important;
-    color: #444 !important;
-
-    text-align: left !important;
-
-    margin: 0 0 55px 0 !important;
-    padding: 0 !important;
-}
-
-
-/* Each job */
-
-.hao-teaching-entry {
-    width: 100%;
-    margin: 0 0 65px 0;
-    padding: 0;
-}
-
-
-/* Position + University */
-
-.hao-teaching-heading {
-    display: grid;
-    grid-template-columns: 360px 1fr;
-    column-gap: 50px;
-
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-
-/* Position */
-
-.hao-teaching-position {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.4;
-
-    color: #222;
-}
-
-
-/* University */
-
-.hao-teaching-institution {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.4;
-
-    color: #222;
-}
-
-
-/* Course list */
-
-.hao-teaching-courses {
-    margin: 0;
-    padding: 0;
-}
-
-
-.hao-teaching-courses p {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 1.5;
-
-    color: #333;
-
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .hao-teaching-page {
-        width: auto;
-        margin: 0 25px !important;
-        padding: 40px 0 70px 0 !important;
-    }
-
-
-    .hao-teaching-title {
-        font-size: 29px !important;
-        margin-bottom: 40px !important;
-    }
-
-
-    .hao-teaching-heading {
+    .teaching-heading {
         display: block;
         margin-bottom: 20px;
     }
 
-
-    .hao-teaching-position,
-    .hao-teaching-institution {
+    .teaching-position,
+    .teaching-institution {
         font-size: 18px;
     }
 
-
-    .hao-teaching-institution {
-        margin-top: 5px;
+    .teaching-institution {
+        margin-top: 6px;
     }
 
-
-    .hao-teaching-courses p {
+    .teaching-courses p {
         font-size: 16px;
     }
 
-
-    .hao-teaching-entry {
+    .teaching-entry {
         margin-bottom: 50px;
     }
 
