@@ -229,107 +229,144 @@ footer {
 
 }
 
-/* ========================================
-   Teaching Page
-   ======================================== */
+/* =========================================================
+   TEACHING PAGE
+   ========================================================= */
 
-.teaching-container {
+
+/* Whole page content */
+
+.hao-teaching-page {
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 50px 100px 50px;
+    margin: 0 auto !important;
+    padding: 60px 0 100px 0 !important;
 }
 
 
-/* Page heading */
+/* Teaching title */
 
-.teaching-container > h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: normal;
-    color: #444;
+.hao-teaching-title {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    color: #444 !important;
 
-    margin: 0 0 55px 0;
+    text-align: left !important;
+
+    margin: 0 0 55px 0 !important;
+    padding: 0 !important;
 }
 
 
-/* Individual teaching position */
+/* Each job */
 
-.teaching-entry {
-    max-width: 950px;
-    margin-bottom: 65px;
+.hao-teaching-entry {
+    width: 100%;
+    margin: 0 0 65px 0;
+    padding: 0;
 }
 
 
-/* Position and university */
+/* Position + University */
 
-.teaching-header {
+.hao-teaching-heading {
     display: grid;
-    grid-template-columns: 330px 1fr;
-    column-gap: 45px;
-    align-items: baseline;
+    grid-template-columns: 360px 1fr;
+    column-gap: 50px;
 
-    margin-bottom: 22px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 
-.teaching-role,
-.teaching-university {
+/* Position */
+
+.hao-teaching-position {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 20px;
     font-weight: bold;
+    line-height: 1.4;
+
     color: #222;
 }
 
 
-/* Module list */
+/* University */
 
-.teaching-modules {
+.hao-teaching-institution {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+
+    color: #222;
+}
+
+
+/* Course list */
+
+.hao-teaching-courses {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hao-teaching-courses p {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 17px;
-    color: #333;
-}
-
-
-.teaching-modules p {
-    margin: 0 0 12px 0;
+    font-weight: normal;
     line-height: 1.5;
+
+    color: #333;
+
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
 
-/* ========================================
-   Mobile
-   ======================================== */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-    .teaching-container {
-        padding: 40px 25px 70px 25px;
+    .hao-teaching-page {
+        width: auto;
+        margin: 0 25px !important;
+        padding: 40px 0 70px 0 !important;
     }
 
-    .teaching-container > h1 {
-        font-size: 28px;
-        margin-bottom: 40px;
+
+    .hao-teaching-title {
+        font-size: 29px !important;
+        margin-bottom: 40px !important;
     }
 
-    .teaching-header {
+
+    .hao-teaching-heading {
         display: block;
         margin-bottom: 20px;
     }
 
-    .teaching-university {
-        margin-top: 7px;
-    }
 
-    .teaching-role,
-    .teaching-university {
+    .hao-teaching-position,
+    .hao-teaching-institution {
         font-size: 18px;
     }
 
-    .teaching-modules {
+
+    .hao-teaching-institution {
+        margin-top: 5px;
+    }
+
+
+    .hao-teaching-courses p {
         font-size: 16px;
     }
 
-    .teaching-entry {
+
+    .hao-teaching-entry {
         margin-bottom: 50px;
     }
 
