@@ -123,3 +123,108 @@ footer {
         width: 100%;
     }
 }
+
+
+/* ========================================
+   Research Page
+   ======================================== */
+
+.research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 50px 80px 50px;
+}
+
+
+/* Research section */
+
+.research-section {
+    margin-bottom: 80px;
+}
+
+.research-section h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+
+/* Individual paper */
+
+.research-paper {
+    margin-bottom: 50px;
+}
+
+.research-paper h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+
+/* Paper title links */
+
+.research-paper h2 a {
+    color: #006d83;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.research-paper h2 a:hover {
+    color: #004c5c;
+}
+
+
+/* Titles without links */
+
+.paper-title {
+    color: #222;
+}
+
+
+/* Paper description / abstract */
+
+.paper-description {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .research-container {
+        padding: 40px 25px 60px 25px;
+    }
+
+    .research-section h1 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .research-paper h2 {
+        font-size: 19px;
+    }
+
+    .paper-description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .research-paper {
+        margin-bottom: 40px;
+    }
+
+}
