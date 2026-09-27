@@ -209,7 +209,28 @@ footer {
     margin: 0;
 }
 
+/* Publication details */
 
+.publication-details {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    margin: 5px 0 0 0;
+}
+
+.publication-details a {
+    color: #006d83;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.publication-details a:hover {
+    color: #004c5c;
+}
+
+.coauthor {
+    font-weight: normal;
+}
 
 /* =========================================================
    TEACHING PAGE
