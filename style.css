@@ -116,6 +116,17 @@ footer {
     margin-bottom: 16px;
 }
 
+/* Home page links */
+
+.profile-right a {
+    color: #006d83;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.profile-right a:hover {
+    color: #004c5c;
+}
 
 
 /* =========================================================
