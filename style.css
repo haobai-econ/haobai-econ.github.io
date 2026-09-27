@@ -243,6 +243,28 @@ footer {
     font-weight: normal;
 }
 
+/* Work in Progress titles */
+
+.work-in-progress-title {
+    font-size: 20px;
+    font-weight: normal !important;
+    line-height: 1.5;
+    color: #222;
+
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.work-in-progress-title em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.coauthor {
+    font-style: normal;
+    font-weight: normal;
+}
+
 /* =========================================================
    TEACHING PAGE
    ========================================================= */
