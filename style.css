@@ -352,6 +352,20 @@ footer {
     padding: 0;
 }
 
+/* Qualification */
+
+.teaching-qualification {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+
+    margin-bottom: 30px;
+}
+
+.qualification-label {
+    text-decoration: underline;
+    margin-right: 6px;
+}
 
 
 /* =========================================================
