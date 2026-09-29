@@ -356,15 +356,11 @@ footer {
 
 .teaching-qualification {
     font-size: 18px;
-    font-weight: 600;
-    color: #222;
+    font-weight: normal;
+    color: #555;
 
-    margin-bottom: 30px;
-}
-
-.qualification-label {
-    text-decoration: underline;
-    margin-right: 6px;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 
 
